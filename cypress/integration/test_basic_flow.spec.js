@@ -12,7 +12,7 @@ describe("Testing basic validation", () => {
       ":nth-child(2) > .side-nav__main__item__icon > :nth-child(1) > button"
     ).click();
     cy.findByRole("button", { name: /new project/i }).click();
-    cy.wait(2000);
+    cy.wait(10000);
 
     const projectName = uuidv4().substring(0, 20);
 
